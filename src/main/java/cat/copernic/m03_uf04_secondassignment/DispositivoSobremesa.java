@@ -7,14 +7,12 @@ package cat.copernic.m03_uf04_secondassignment;
 
 /**
  *
- * @author pep
+ * @author Reda
  */
-public class M03_UF04_SecondAssignment {
-    
-    public static void main(String[] args) {
-        Dispositivos dispo1 = new Ordenador("ASUS", "la innovación y la calidad",720.0 );
+public abstract class DispositivoSobremesa extends Dispositivos {
 
-
+    public DispositivoSobremesa(String nombre, String discripcion, double precio) {
+        super(nombre, discripcion, precio);
     }
-    
+
 }
