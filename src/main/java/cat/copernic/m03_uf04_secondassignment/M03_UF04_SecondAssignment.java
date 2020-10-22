@@ -15,15 +15,15 @@ public class M03_UF04_SecondAssignment {
         Dispositivos dispo1 = new Ordenador("Alienware", "Alien al poder",720.0 );
         dispo1.conecta();
         
-        Dispositivos dispo2 = new Tablet("IPAD", "El mundo en tus manos",1720.0 );
+        Dispositivos dispo2 = new TerminalDeVenta("Terminal", "El mundo en tus manos",1720.0 );
         dispo2.conecta();
         
-        Dispositivos dispo3 = new Portatil("ASUS", "la innovación y la calidad",2320.0 );
-        dispo3.conecta();
+       
         
         
         
         dispo1.desconecta();
+        dispo2.desconecta();
     }
     
 }
