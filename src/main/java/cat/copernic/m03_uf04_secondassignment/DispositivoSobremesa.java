@@ -15,4 +15,14 @@ public abstract class DispositivoSobremesa extends Dispositivos {
         super(nombre, discripcion, precio);
     }
 
+    @Override
+    public void desconecta() {
+        System.out.println("Desconectando Dispositivo sobremesa");
+    }
+
+    @Override
+    public void conecta() {
+        System.out.println("Conectando Dispositivo sobremesa");
+    }
+
 }

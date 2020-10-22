@@ -15,16 +15,4 @@ public class Ordenador extends DispositivoSobremesa {
         super(nombre, discripcion, precio);
     }
 
-    @Override
-    public void desconecta() {
-        super.desconecta(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void conecta() {
-        super.conecta(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-   
-
 }

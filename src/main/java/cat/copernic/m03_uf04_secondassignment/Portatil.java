@@ -17,17 +17,7 @@ public class Portatil extends DispositivosMobiles {
 
     @Override
     void reset() {
-        System.out.println("Reseteando Portatil!!!" );
+        System.out.println("Reseteando Portatil!!!");
     }
 
-    @Override
-    public void desconecta() {
-        System.out.println("Desconectando Portatil!!! ");
-    }
-
-    @Override
-    public void conecta() {
-        System.out.println("Conectando Portatil!!! ");
-    }
-    
 }

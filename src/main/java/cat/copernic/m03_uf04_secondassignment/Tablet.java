@@ -20,15 +20,4 @@ public class Tablet extends DispositivosMobiles {
         System.out.println("La tablet se esta reseteando!!!");
     }
 
-    @Override
-    public void desconecta() {
-        System.out.println("Desconectando la Tablet... ");
-    }
-
-    @Override
-    public void conecta() {
-        System.out.println("Conectando la Tablet... ");
-    }
-    
-    
 }
