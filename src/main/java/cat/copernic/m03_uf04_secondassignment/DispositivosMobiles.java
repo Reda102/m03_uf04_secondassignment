@@ -9,7 +9,7 @@ package cat.copernic.m03_uf04_secondassignment;
  *
  * @author Reda
  */
-public abstract class DispositivosMobiles extends Dispositivos {
+public abstract class DispositivosMobiles extends Dispositivos implements Conectable{
 
     public DispositivosMobiles(String nombre, String discripcion, double precio) {
         super(nombre, discripcion, precio);
