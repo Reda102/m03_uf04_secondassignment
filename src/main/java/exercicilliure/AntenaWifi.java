@@ -9,11 +9,11 @@ package exercicilliure;
  *
  * @author Reda
  */
-public class AntenaWifi extends Detalle{
+public class AntenaWifi extends Item{
     private double potenciaWifi;
 
-    public AntenaWifi(double potenciaWifi, int cantidad, double peso, String lugarDeCompra, double precio, String nombre, String discripcion, int id) {
-        super(cantidad, peso, lugarDeCompra, precio, nombre, discripcion, id);
+    public AntenaWifi(double potenciaWifi, double precio, String nombre, String discripcion, int id) {
+        super(precio, nombre, discripcion, id);
         this.potenciaWifi = potenciaWifi;
     }
 
@@ -29,6 +29,9 @@ public class AntenaWifi extends Detalle{
     public String toString() {
         return "AntenaWifi{" + "potenciaWifi=" + potenciaWifi + '}';
     }
+
+    
+  
 
     
     

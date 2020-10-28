@@ -9,12 +9,12 @@ package exercicilliure;
  *
  * @author Reda
  */
-public class ReproductoMusica extends Detalle {
+public class ReproductoMusica extends Item {
     
     private int capacidadReproducto;
 
-    public ReproductoMusica(int capacidadReproducto, int cantidad, double peso, String lugarDeCompra, double precio, String nombre, String discripcion, int id) {
-        super(cantidad, peso, lugarDeCompra, precio, nombre, discripcion, id);
+    public ReproductoMusica(int capacidadReproducto, double precio, String nombre, String discripcion, int id) {
+        super(precio, nombre, discripcion, id);
         this.capacidadReproducto = capacidadReproducto;
     }
 
@@ -31,6 +31,7 @@ public class ReproductoMusica extends Detalle {
         return "ReproductoMusica{" + "capacidadReproducto=" + capacidadReproducto + '}';
     }
 
-   
     
+
+   
 }

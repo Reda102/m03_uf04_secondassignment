@@ -9,12 +9,12 @@ package exercicilliure;
  *
  * @author Reda
  */
-public class Pendrive extends Detalle{
+public class Pendrive extends Item{
     //Gb del Pendrive
     private int capacidadMemoria; 
 
-    public Pendrive(int capacidadMemoria, int cantidad, double peso, String lugarDeCompra, double precio, String nombre, String discripcion, int id) {
-        super(cantidad, peso, lugarDeCompra, precio, nombre, discripcion, id);
+    public Pendrive(int capacidadMemoria, double precio, String nombre, String discripcion, int id) {
+        super(precio, nombre, discripcion, id);
         this.capacidadMemoria = capacidadMemoria;
     }
 
@@ -31,6 +31,8 @@ public class Pendrive extends Detalle{
         return "Pendrive{" + "capacidadMemoria=" + capacidadMemoria + '}';
     }
 
+  
+    
   
     
 }

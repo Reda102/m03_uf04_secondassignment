@@ -48,8 +48,21 @@ public class CarritoDeLaCompra implements Finalizable {
     @Override
     public double checkout() {//total
         System.out.println("Compra terminada");
-        return 1.0;
-        
+        double total = 0;
+        int size = carrito.size();
+
+        for (int i = 0; i < carrito.size(); i++) {
+            Detalle detalle = carrito.get(i);
+            total += detalle.getCantidad() * detalle.getItem().getPrecio();
+        }
+
+        return total;
+
     }
+      public ArrayList<Detalle> getCarrito() {
+        return carrito;
+    }
+    
+    
 
 }

@@ -31,19 +31,20 @@ public class M03_UF04_SecondAssignment {
          *
          * *
          */
-
-        Item Producto1 = new AntenaWifi(120.5, 1, 500, "Market", 12.5, "Alfa", "La señal en tus manos", 1);
-        Item Producto2 = new Pendrive(32, 1, 250, "Market", 20.5, "Kingston", "La memoria en tus manos", 2);
-        Item Producto3 = new ReproductoMusica(600, 1, 120, "Market", 30.0, "iPod", "La musica en tus bolsillos", 3);
         CarritoDeLaCompra p = new CarritoDeLaCompra();
 
-        p.añade((Detalle) Producto1);
+        Item Producto1 = new AntenaWifi(30.0, 5.5, "ALFA", "La señal en tu mano", 1);
+        Item Producto2 = new Pendrive(300, 15.0, "KINGSTON", "TU USB", 2);
+        Item Producto3 = new ReproductoMusica(200, 30.5, "IPAD", "la musica en tu bolsillo", 3);
 
+       /** p.añade(Producto1);
         p.añade((Detalle) Producto2);
-
         p.añade((Detalle) Producto3);
-        p.elimina((Detalle) Producto3);
+
+        p.elimina((Detalle) Producto3);  */
+
         p.checkout();
+
     }
 
 }

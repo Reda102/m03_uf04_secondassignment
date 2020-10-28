@@ -12,17 +12,24 @@ package exercicilliure;
  * id, cantidad, Item (propiedad de item)
  *
  */
-public class Detalle extends Item {
+public class Detalle {
 
+    private int id;
+    private Item item;
     private int cantidad;
-    private double peso;
-    private String lugarDeCompra;
 
-    public Detalle(int cantidad, double peso, String lugarDeCompra, double precio, String nombre, String discripcion, int id) {
-        super(precio, nombre, discripcion, id);
+    public Detalle(int id, Item item, int cantidad) {
+        this.id = id;
+        this.item = item;
         this.cantidad = cantidad;
-        this.peso = peso;
-        this.lugarDeCompra = lugarDeCompra;
+    }
+
+    public Item getItem() {
+        return item;
+    }
+
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     public int getCantidad() {
@@ -33,25 +40,12 @@ public class Detalle extends Item {
         this.cantidad = cantidad;
     }
 
-    public double getPeso() {
-        return peso;
-    }
-
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-
-    public String getLugarDeCompra() {
-        return lugarDeCompra;
-    }
-
-    public void setLugarDeCompra(String lugarDeCompra) {
-        this.lugarDeCompra = lugarDeCompra;
+    public int getId() {
+        return id;
     }
 
     @Override
     public String toString() {
-        return "Detalle{" + "cantidad=" + cantidad + ", peso=" + peso + ", lugarDeCompra=" + lugarDeCompra + '}';
+        return "Detalle{" + "id=" + id + ", item=" + item + ", cantidad=" + cantidad + '}';
     }
-
 }
