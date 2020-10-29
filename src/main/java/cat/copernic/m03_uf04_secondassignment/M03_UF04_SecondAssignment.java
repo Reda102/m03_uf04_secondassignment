@@ -37,7 +37,11 @@ public class M03_UF04_SecondAssignment {
         Item Producto2 = new Pendrive(300, 15.0, "KINGSTON", "TU USB", 2);
         Item Producto3 = new ReproductoMusica(200, 30.5, "IPAD", "la musica en tu bolsillo", 3);
 
-       /** p.añade(Producto1);
+       
+        p.añade( new Detalle(1, Producto1, 4));
+        p.añade( new Detalle(2, Producto2, 4));
+        p.añade( new Detalle(3, Producto3, 4));
+        /** p.añade(Producto1);
         p.añade((Detalle) Producto2);
         p.añade((Detalle) Producto3);
 
